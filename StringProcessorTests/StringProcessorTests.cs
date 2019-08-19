@@ -37,7 +37,7 @@ namespace Tests
         [TestCase("ab cd efg", '_', "ab_cd_efg")]
         [TestCase("ju ic e", 'c', "jucicce")]
         [TestCase("an yw a y", '|', "an|yw|a|y")]
-        [TestCase("vacuuuuum", '-', "vacuuuum")]
+        [TestCase("vacuuuuum", '-', "vacuuuuum")]
         public void ReplaceSpaceTest(string word, char c, string ans)
         {
             Assert.AreEqual(ans, processor.ReplaceSpace(word, c));
